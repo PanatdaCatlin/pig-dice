@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>pig-dice</title>
-  </head>
-  <body>
-    <div class="container" id="containerMain">
-      <h1 id="titleWelcome">Pig Dice</h1>
-        <div class="panel panel-default">
-          <div class="panel-body"><strong>PLAYER 1/2</strong></div>
-          </div>
-        <img src="img/pigCash.jpg" alt="Picture of boss pig." id="bossPig">
-        <div class="card w-75" id="rollCard">
-  <div class="card-body">
-    <h5 class="card-title">Roll</h5>
-    <button class="btn btn-success"><h2>Roll</h2></button>
-    <button class="btn btn-danger" id="holdButton"><h2>Hold</h2></button>
-  </div>
-  </div>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>pig-dice</title>
+</head>
+<body>
+  <div class="container" id="containerMain">
+    <h1 id="titleWelcome">Pig Dice</h1>
+    <div class="panel panel-default">
+      <div class="panel-body"><strong>PLAYER 1/2</strong></div>
+    </div>
+    <img src="img/pigCash.jpg" alt="Picture of boss pig." id="bossPig">
+    <div class="card w-75" id="rollCard">
+      <div class="card-body">
+        <h5 class="card-title">Roll</h5>
+        <button class="btn btn-success" id="rollButton"><h2>Roll</h2></button>
+        <div id="diceResults"></div>
+        <button class="btn btn-danger" id="holdButton"><h2>Hold</h2></button>
+      </div>
+    </div>
     <div class="container" id="playerTable">
       <div class="row">
-      <div class="col-6">
-        <h3><strong>Player 1</strong></h3>
+        <div class="col-sm-6">
+          <h3><strong>Player 1</strong></h3>
         </div>
-      <div class="col-6">
-        <h3 id="playerTwo"><strong>Player 2</strong></h3>
-      </div>
+        <div class="col-sm-6">
+          <h3 id="playerTwo"><strong>Player 2</strong></h3>
+        </div>
       </div>
 
     </div>
 
 
-      <a href="index.html"  id= "playButton" class="btn btn-secondary btn-lg" role="button"><h2>Back to instructions</h2></a>
-    </div>
-  </body>
+    <a href="index.html"  id= "playButton" class="btn btn-secondary btn-lg" role="button"><h2>Back to instructions</h2></a>
+  </div>
+</body>
 </html>
